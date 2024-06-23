@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./pages/Home";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import NewTask from "./pages/NewTask";
 import Completed from "./pages/Completed";
 import { useState, useEffect } from "react";
