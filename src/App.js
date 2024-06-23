@@ -83,7 +83,7 @@ function App() {
           }
         />
         <Route
-          path="/newtask"
+          path="/todoApp/#/newtask"
           element={
             <NewTask
               title={title}
@@ -98,7 +98,7 @@ function App() {
           }
         />
         <Route
-          path="/completed"
+          path="/todoApp/#/completed"
           element={
             <Completed
               tasks={tasks.filter((task) => task.completed)}
@@ -110,7 +110,7 @@ function App() {
           }
         />
         <Route
-          path="/todo"
+          path="/todoApp/#/todo"
           element={
             <Home
               tasks={tasks}
