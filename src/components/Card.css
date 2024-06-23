@@ -1,0 +1,27 @@
+.box {
+  margin-top: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2vw;
+  font-weight: bold;
+  transition: transform 0.5s;
+}
+.box .fa-solid:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.fa-trash {
+  color: red;
+  font-size: 2.5vw;
+}
+.fa-check {
+  color: green;
+  font-weight: bold;
+  font-size: 2vw;
+  border: 2px solid green;
+  padding: 0.4vw;
+}
+.note p {
+  margin-top: 1.5vw;
+}

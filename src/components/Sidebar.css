@@ -1,0 +1,148 @@
+/* body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+} */
+
+.container {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  width: 250px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.menu-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-header h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.menu-header input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #f4f4f9;
+}
+
+.lists,
+.tags {
+  margin-top: 20px;
+}
+
+.lists h3,
+.tags h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.lists ul,
+.tags ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lists ul li,
+.tags .tag {
+  padding: 5px;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.lists button,
+.tags button,
+nav button {
+  padding: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lists button:hover,
+.tags button:hover,
+nav button:hover {
+  background-color: #0056b3;
+}
+
+.sticky-wall {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.note {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.note h4 {
+  margin: 0 0 10px;
+}
+
+.note ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note ul li {
+  margin-bottom: 5px;
+}
+
+.note.add-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  border: 2px dashed #bbb;
+}
+
+.note.add-note button {
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #666;
+  cursor: pointer;
+}
+
+.note.add-note button:hover {
+  color: #333;
+}

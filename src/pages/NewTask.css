@@ -1,0 +1,183 @@
+.container {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  width: 30% !important;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.menu-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-header h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.menu-header input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  background-color: #f4f4f9;
+}
+
+.lists,
+.tags {
+  margin-top: 20px;
+}
+
+.lists h3,
+.tags h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.lists ul,
+.tags ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lists ul li,
+.tags .tag {
+  padding: 5px;
+  background-color: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.lists button,
+.tags button,
+nav button {
+  padding: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lists button:hover,
+.tags button:hover,
+nav button:hover {
+  background-color: #0056b3;
+}
+
+.sticky-wall-newTask {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Arial", sans-serif;
+  /* background-color: #4c27ae; */
+  background-image: url("https://img.freepik.com/free-vector/3d-triangle-background-monochrome-vivid-colour_23-2148386603.jpg?w=740&t=st=1717910237~exp=1717910837~hmac=776ac208cfa0aa1de4ab1fa7ec878f9beb95654d690e25c8429cff34ca55e084");
+  background-position: center;
+  background-size: cover;
+}
+
+.container1 {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  /* box-shadow: 0px 32px 8px 0px rgba(252, 1, 177, 0.37); */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 1.8em;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #262525;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.5em;
+  color: #333;
+  background: #fff;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #828181;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
