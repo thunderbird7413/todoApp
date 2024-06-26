@@ -70,7 +70,7 @@ function Home({
                   class="fa-solid fa-clipboard-list"
                   style={{ fontSize: "1.7vw" }}
                 ></i>
-                <a href="/todoApp/#/todo">To Do</a>
+                <a href="/todo">To Do</a>
               </li>
               <li
                 style={{
@@ -81,7 +81,7 @@ function Home({
                 }}
               >
                 <i class="fa-solid fa-circle-check"></i>
-                <a href="/todoApp/#/completed">Completed</a>
+                <a href="/completed">Completed</a>
               </li>
 
               <li
@@ -93,7 +93,7 @@ function Home({
                 }}
               >
                 <i class="fa-solid fa-circle-plus"></i>
-                <a href="/todoApp/#/newtask">Add New Task</a>
+                <a href="/newtask">Add New Task</a>
               </li>
             </ul>
           </nav>
