@@ -67,7 +67,7 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
   return (
-    <Router>
+    <Router basename="/todoApp">
       <Toaster />
       <Routes>
         <Route
