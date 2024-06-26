@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./pages/Home";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NewTask from "./pages/NewTask";
 import Completed from "./pages/Completed";
 import { useState, useEffect } from "react";
@@ -67,7 +67,7 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
   return (
-    <Router>
+    <Router basename="/todoApp">
       <Toaster />
       <Routes>
         <Route
@@ -83,7 +83,7 @@ function App() {
           }
         />
         <Route
-          path="/todoApp/#/newtask"
+          path="/newtask"
           element={
             <NewTask
               title={title}
@@ -98,7 +98,7 @@ function App() {
           }
         />
         <Route
-          path="/todoApp/#/completed"
+          path="/completed"
           element={
             <Completed
               tasks={tasks.filter((task) => task.completed)}
@@ -110,7 +110,7 @@ function App() {
           }
         />
         <Route
-          path="/todoApp/#/todo"
+          path="/todo"
           element={
             <Home
               tasks={tasks}
