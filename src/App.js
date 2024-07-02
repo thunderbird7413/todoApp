@@ -1,6 +1,6 @@
 import "./App.css";
 import Home from "./pages/Home";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NewTask from "./pages/NewTask";
 import Completed from "./pages/Completed";
 import { useState, useEffect } from "react";
@@ -67,7 +67,7 @@ function App() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
   return (
-    <Router basename="/todoApp">
+    <BrowserRouter>
       <Toaster />
       <Routes>
         <Route
@@ -122,7 +122,7 @@ function App() {
           }
         />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
